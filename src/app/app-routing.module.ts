@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'catalogo',
+    redirectTo: 'registro',
     pathMatch: 'full'
   },
   {

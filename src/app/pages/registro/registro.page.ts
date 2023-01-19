@@ -27,10 +27,10 @@ export class RegistroPage implements OnInit {
    }
 
    public validarRegistro(){
-    const formularioValido = this.formularioRegi.valid;
-    if(!formularioValido){
-      return
-    }
+    // const formularioValido = this.formularioRegi.valid;
+    // if(!formularioValido){
+    //   return
+    // }
     this.apiReg.registrar({
       firstName: this.formularioRegi.value.firstName,
       lastName : this.formularioRegi.value.lastName,
