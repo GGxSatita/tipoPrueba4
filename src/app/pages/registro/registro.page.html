@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <form [formGroup]="formularioRegi" (ngSubmit)="validarRegistro()">
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">FirstName</ion-label>
+            <ion-input formControlName="firstName" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">LastName</ion-label>
+            <ion-input formControlName="lastName" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">Age</ion-label>
+            <ion-input formControlName="age" type="number"></ion-input>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">Username</ion-label>
+            <ion-input formControlName="username" type="text"></ion-input>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="stacked">Password</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-item>
+              <ion-label position="stacked">Gender</ion-label>
+              <ion-select>
+                <ion-select-option value="male">Male</ion-select-option>
+                <ion-select-option value="female">Female</ion-select-option>
+              </ion-select>
+            </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>BirthDate</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-datetime formControlName="birthDate" presentation="date" color="warning"></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button expand="full" color="primary" type="submit" role="submit">
+            Registrar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+
+    </form>
+  </ion-grid>
+
+</ion-content>
